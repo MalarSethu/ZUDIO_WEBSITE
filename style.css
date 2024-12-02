@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+/* navbar */
+nav{
+    background-color: rgba(3, 5, 4, 0.941);
+    height: 20vh;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+    padding: 0 25px;
+    
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 3px;
+    line-height: 80px;
+}
+nav a:hover{
+    color:#717171;
+    font-size: 20px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 200px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* Mainpage Content */
+.imglink a{
+    margin-bottom: -50px;
+    margin-top: 50px;
+}
+.imglink ul li a{
+    line-height: 60px;
+    font-size: 25px;
+    color: yellow;
+    text-decoration: none;
+}
+.imglink{
+    margin-top: -50px;
+    background-position:  center;
+    background-size: 100% 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-image:url('images/lady.jpg');
+    
+}
+.imglink a:hover{
+    color: white;
+}
+.image2 ul a{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    float: left;
+    color: yellow;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.image2 ul a:hover{
+    color: red;
+}
+.link ul a{
+    
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    float: left;
+    color: yellow;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link ul a:hover{
+    color: red;
+}
+.beautybg{
+    background-color: black;
+}
+
+/* Footer Content */
+footer{
+    background-color: rgba(3, 5, 4, 0.941);
+    color: rgb(19, 19, 19);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    
+}
+
+.footercontent{
+    color: white;
+}
+/* Navlink Contents */
+#zudio{
+    width:500px;
+    height: 400px;
+}
+.imagelink{
+    text-align: center;
+}
+.imagelink img{
+    width: 250px;
+    height: 320px;
+    margin: 10px;
+}
+.imagelink p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+#ZudioNearYou{
+    background-color: darkgray;
+}
+#ZudioNearYou h1 {
+    text-align: center;
+    width: 100%;
+}
+.form{
+    
+    text-align: center;
+    width: 100%;
+}
+.state{
+    margin: 10px;
+    padding: 10px;
+}
+.city{
+    margin: 10px;
+    padding: 10px;
+}
+     
+/* Slideshow container */
+.slideshow-container1 {
+    display: inline;
+    margin-bottom: 900px;
+}
+
+        
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    margin-left:auto
+}
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+}
+.active {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+.mySlides img{
+    margin:20px 20px 20px 80px;
+}
+.container1 img{
+    margin:20px 10px 20px 80px;
+}
+.numbertext1{
+    color: #f2f2f2;
+    font-size: 12px;
+    margin-left:auto;
+}
+.storedetail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.storedetails{  
+    width: 30%;
+    padding: 20px;
+    background-color: #bbb;
+    margin:0 0px 3px 25px;
+}
+.storedetails h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    color: #232323;
+    margin-bottom: 15px;
+}
+.storedetails h5{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #232323;
+    margin-bottom: 5px;
+}
+.storedetails p{
+    font-size: 12px;
+    color: #232323;
+    margin-bottom: 20px;
+}
+.content h1{
+    color: #f2f2f2;
+}
+.content h2{
+    color: #717171;
+}
+.content h1,h2{
+    text-align: center;
+}
+
+
+
+
+/* Responsive */
+@media all and (max-width:1024px){
+    nav{
+        height: 150px;
+    }
+    .checkbtn{
+        display: block;
+        margin-top: -70px;
+    }
+    .logo{
+        margin-top: 30px;
+        font-size: -15px;
+    }
+    ul{
+        position: fixed;
+        width: 60%;
+        /* height: 100  vh; */
+        background: white;
+        top: 83px;
+        left: -200%;
+        text-align: center;
+        transition: all .5s;
+        margin-top: -80px;
+    }
+    nav ul li{
+        display: block;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .checkbtn label{
+        margin-bottom: 100px;
+    }
+    .checkbtn i{
+        margin-top: 120px;
+    } 
+    .imglink{
+        height: 1200px;
+    }
+
+    .link{
+        position: absolute;
+        top: 80px;
+        left: -240px;
+        width: 80%;
+        height: 80%;
+        background-color: transparent;
+        z-index: 0;  
+        margin-top: 40px; 
+        margin-right: -170px;     
+    }
+    .link a{
+        display: inline-block;
+        margin-top: 50px;
+        padding-top: 0px;
+        width: 60px;
+        line-height: 5px;
+        /* font-size: 30px; */
+    }
+    .link1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        background-color: transparent;
+        z-index: 0;  
+        margin-top: 100px;      
+    }
+    .link1 a{
+        display: block;
+        margin-left:5px;
+        padding-top: 0px;
+        width: 60px;
+        line-height: 5px;
+        font-size: 50px;
+    }
+    #check:checked ~ ul{
+        margin-top: 80px;    
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .mySlides img{
+        margin-left: 60px;
+        margin-right: 15px;
+        size: 50px;
+    }
+    .footercontent p{
+    font-size: 20px;
+    float: right;
+    margin-right: 5px;
+    padding: 20px ;
+    }
+
+    footer{
+        background-color: black;
+        height: 150px;
+    }
+    .footer{
+        margin-top: -100px;
+        width: 100%;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-bottom: 100px;
+    }
+
+    }
+
+
+@media all and (max-width:860px){
+    nav{
+        height: 150px;
+    }
+    .checkbtn{
+        display: block;
+        margin-top: -70px;
+    }
+    .logo{
+        margin-top: 30px;
+        font-size: -15px;
+    }
+    ul{
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background: white;
+        top: 83px;
+        left: -200%;
+        text-align: center;
+        transition: all .5s;
+        margin-top: -80px;
+    }
+    nav ul li{
+        display: block;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .checkbtn label{
+        margin-bottom: 100px;
+    }
+    .checkbtn i{
+        margin-top: 120px;
+    } 
+
+    .link{
+        position: absolute;
+        top: 80px;
+        left: -240px;
+        width: 80%;
+        height: 80%;
+        background-color: transparent;
+        z-index: 0;  
+        margin-top: 40px; 
+        margin-right: -170px;     
+    }
+    .link a{
+        display: inline-block;
+        margin-top: 50px;
+        padding-top: 0px;
+        width: 60px;
+        line-height: 5px;
+    }
+    .link1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        background-color: transparent;
+        z-index: 0;  
+        margin-top: 100px;      
+    }
+    .link1 a{
+        display: block;
+        margin-left:5px;
+        padding-top: 0px;
+        width: 60px;
+        line-height: 5px;
+    }
+    #check:checked ~ ul{
+        margin-top: 80px;    
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .mySlides img{
+        margin-left: 60px;
+        margin-right: 15px;
+        size: 50px;
+    }
+    .footercontent p{
+    font-size: 20px;
+    float: right;
+    margin-right: 5px;
+    padding: 20px ;
+    }
+
+    footer{
+        background-color: black;
+        height: 250px;
+    }
+    .footer{
+        margin-top: -20px;
+        width: 100%;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    }
+    /* ok */
+    @media all and (max-width:768px){
+
+        .link1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 80%;
+            background-color: transparent;
+            z-index: 0;  
+            margin-top: 150px;      
+        }
+        .link1 a{
+            display: block;
+            margin-left:5px;
+            padding-top: 0px;
+            width: 60px;
+            line-height: 5px;
+            margin-top: -300px;
+            
+        }
+        .link{
+            position: absolute;
+            top: 80px;
+            /* left: -240px; */
+            width: 80%;
+            height: 80%;
+            background-color: transparent;
+            z-index: 0;  
+            /* margin-top: 100px; 
+            margin-right: -170px;      */
+        }
+        .link a{
+            display: inline-block;
+            margin-top: 50px;
+            padding-top: 0px;
+            width: 60px;
+            line-height: 5px;
+        }
+
+        .slideshow{
+            height: 100px;
+        }
+        .mySlides img{
+            margin:100px 5px 5px 25px;
+            size: 70px;
+        }
+        .numbertext{
+            margin-top: 300px 50px 50px 50px;
+        }
+        .logo{
+            margin-top: 50px;
+            font-size: -15px;
+        }
+        #check:checked ~ ul{
+            margin-top: 80px;    
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .checkbtn label{
+            margin-bottom: 100px;
+        }
+        .checkbtn i{
+            margin-top: 120px;
+        } 
+        .container1 marquee{
+            margin-top: 100px;
+
+        }
+        .footer{
+            line-height: 40px;
+            margin-top: 150px; 
+            width: 80%;
+            
+            
+        }
+        footer{
+            height: 200px;
+            margin-top: -150px;
+        }
+        .footercontent p{
+            font-size: 20px;
+            text-align: center;
+            margin-right: 5px;
+            padding: 20px ;
+         }
+         span{
+            margin-left: 30px;
+         }
+
+        .imagelink h1{
+            font-size: 30px;
+            margin: 10px;
+        }
+        .imagelink img{
+            width: 200px;
+            height: 300px; 
+        }
+        .imagelink{
+            margin-bottom: 20px;
+        }
+        .imglink{
+            height: 900px;
+        
+        }
+        .fade1{
+            height: 400px;
+        }
+        #zudionearyou p h1{
+            align-items: center;
+            width: 100%;
+            display: block;
+        }
+        .storedetails{
+            width: 100%;
+            
+        }
+        .storedetail{
+            margin-bottom: 20px;
+        }
+        }
+        
+        
+        
+ @media all and (max-width:430px){
+    .mainnav{
+        height: 30px;
+    }
+    .checkbtn{
+        margin-top: -90px;
+    }
+
+.link1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+    z-index: 0;  
+    margin-top: 65px;      
+}
+.link1 a{
+    display: block;
+    margin-left: 0px 0px 0px 5px;
+    padding-top: 0px;
+    width: 60px;
+    line-height: 5px;
+    
+}
+.link{
+    position: absolute;
+    top: 80px;
+    left: -70px;
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+    z-index: 0;  
+    margin-top: 65px;      
+}
+.mySlides img{
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 50px;
+    height: 150px;
+    margin-top: 30px;
+}
+.logo{
+    margin-top: 15px;
+    
+ }
+#check:checked ~ ul{
+    margin-top: 80px;    
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.checkbtn label{
+    margin-bottom: 50px;
+} 
+.footer{
+    line-height: 15px;
+    margin-top: -20px; 
+    width: 80%;
+    margin-bottom: 150px;  
+}
+footer{
+    height: 100px;
+    margin-bottom: -50px;
+}
+.footercontent p{
+    font-size: 10px;
+    text-align: center;
+    margin-right: 5px;
+    padding: 10px ;
+ }
+.imagelink h1{
+    font-size: 30px;
+    margin: 10px;
+}
+.imagelink img{
+    width: 100px;
+    height: 100px; 
+}
+.imagelink{
+    margin-bottom: 18px;
+}
+#zudionearyou p h1{
+    align-items: center;
+    width: 100%;
+    display: block;
+}
+.storedetails{
+    width: 90%;
+    margin-left: 15px;
+}
+.storedetail{
+    margin-bottom: 20px;
+}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+/* On smaller screens, decrease text size */
+ @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  } 
+   
+ 
